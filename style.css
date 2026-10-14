@@ -1,101 +1,189 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-header{
+
+/* --- Cabeçalho e Menu --- */
+header {
     width: 100%;
     height: 10vh;
     background-color: #F5EFEB;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-header h1{
+
+header h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     text-align: center;
-
 }
-nav{
+
+nav {
     width: 100%;
     height: 10vh;
     background-color: #EFE7E0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-
-
+    position: sticky; /* Mantém o menu fixo no topo ao rolar a página */
+    top: 0;
+    z-index: 1000;
 }
-nav a{
+
+nav a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     color: black;
     text-decoration: none;
     font-weight: 400;
-
+    transition: color 0.3s ease;
 }
-nav a:hover{
+
+nav a:hover {
     color: gray;
     font-weight: 500;
     text-decoration: underline;
+}
 
-}
-main{
+/* --- Estrutura Principal --- */
+main {
     width: 100%;
-    min-height: 300vh;
+    min-height: 100vh; /* Ajustado de 300vh para evitar espaços vazios gigantescos */
     background-color: #FAF8F5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-section{
-    
-    
+
+section {
+    padding: 40px 20px;
     display: flex;
+    flex-direction: column; /* Organiza os textos de cima para baixo */
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.foto{
+h2 {
+    color: #2c3e50; 
+    font-size: 24px; /* Aumentado para dar mais destaque */
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* --- Galeria de Fotos --- */
+#fotos {
+    display: flex;
+    flex-direction: row; /* Coloca os cards lado a lado */
+    flex-wrap: wrap; /* Quebra linha em telas menores */
+    justify-content: center;
+    gap: 20px; /* Cria espaçamento uniforme entre as fotos */
+    padding: 20px;
+}
+
+.foto {
     background-color: #ffffff; 
     border: 1px solid #e0e0e0; 
-    width: 50%;
-    height: 50%;
+    width: 300px; /* Largura fixa ideal para os cards das imagens */
     border-radius: 12px; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
     overflow: hidden; 
     padding: 15px;
 }
-h2 {
-    color: #2c3e50; 
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 8px;
-}
+
 img {
     width: 100%; 
     height: 200px;
     border-radius: 8px; 
     object-fit: cover; 
-    margin-bottom: 12px;
 }
-footer{
+
+/* --- Formulário de Reservas --- */
+#reservas {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+#reservas form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#reservas h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#reservas label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 600;
+}
+
+#reservas input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#reservas input:focus {
+    border-color: #2c3e50;
+    outline: none;
+}
+
+/* --- Rodapé --- */
+footer {
     width: 100%;
     height: 10vh;
     background-color: #E6DDD4;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (width < 500px){
-    
+/* --- Responsividade (Celulares) --- */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 10px;
+    }
 
-    
+    nav a {
+        font-size: 16px;
+    }
+
+    .foto {
+        width: 100%; /* Fotos ocupam a largura total em telas pequenas */
+    }
+
+    #reservas {
+        width: 90%;
+    }
 }
