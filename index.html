@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Afogados</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,67 +13,62 @@
 
     <nav>
         <a href="#fotos">Fotos do hotel</a>
-        <a href="#reservas">Faça  sua reserva</a>
+        <a href="#reservas">Faça sua reserva</a>
         <a href="#contatos">Contatos</a>
-
     </nav>
 
     <main>
         <section>
-        <h2> Conheça nosso Hotel.</h2>
-
+            <h2>Conheça nosso Hotel.</h2>
         </section>
-<section><p>Alguns registros de nossas instalações.</p></section>
+
+        <section>
+            <p>Alguns registros de nossas instalações.</p>
+        </section>
         
         <section id="fotos">
-          
-
-            
             <div class="foto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWCPz4G9_d_1mwObmCILlkmGKCaRv9NykV0W1edAlTg&s=10" 
-                alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWCPz4G9_d_1mwObmCILlkmGKCaRv9NykV0W1edAlTg&s=10" alt="Quarto com vista para a praia">
             </div>
         
             <div class="foto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefi2aw4G8RL9oiDCTUDS7-JmpOg98-S_8z7hyIJFMrg&s=10" 
-                alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefi2aw4G8RL9oiDCTUDS7-JmpOg98-S_8z7hyIJFMrg&s=10" alt="Piscina externa do hotel">
             </div>
 
             <div class="foto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHvaPuW37GTxf4cEYzEwnyHGm4C2Q05yjPTeWEL2CpQ&s=10" 
-                alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHvaPuW37GTxf4cEYzEwnyHGm4C2Q05yjPTeWEL2CpQ&s=10" alt="Piscina com borda infinita e vista para o mar">
             </div>
-       
         </section>
+
         <section>
             <h2>Faça a sua reserva</h2>
+            <p>Preencha os dados abaixo para reservar a sua estadia no nosso hotel</p>
         </section>
-        <section>
-            <p>Preencha os dados abaixo para reservar a sia estadia no nosso hotel </p>
-        </section>
+
         <section id="reservas">
-        
-        
+            <form>
+                <h3>Dados do hóspede:</h3>
+                
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
 
-        <h3>Dados do hospede:</h3>
-        <label for="entrada">Dados da entrada</label>
-        <input type="text" id="nome" nome="nome">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
 
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
-
-        <label for="telefone">Telefone</label>
-        <input type="telefone" name="telefone" id="telefone">
-
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </form>
         </section>
 
         <section id="contatos">
-
+            <h2>Contatos</h2>
+            <p>Telefone: (87) 99999-9999</p>
+            <p>E-mail: contato@hotelafogados.com.br</p>
         </section>
     </main>
 
     <footer>
-        <h2>Produzido por joao Paulo Higino</h2>
+        <p>Produzido por J.</p>
     </footer>
 </body>
 </html>
