@@ -45,20 +45,38 @@
             <p>Preencha os dados abaixo para reservar a sua estadia no nosso hotel</p>
         </section>
 
-        <section id="reservas">
-            <form>
-                <h3>Dados do hóspede:</h3>
-                
+                <section id="reservas">
+            <h3>Dados do hóspede:</h3>
+            
+            <!-- A tag <form> agora engloba os inputs e o botão de envio -->
+            <form action="#" method="POST">
                 <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="(87) 99999-9999" required>
+
+                <!-- Novo botão de envio adicionado aqui -->
+                <button type="submit" class="btn-enviar">Confirmar Reserva</button>
             </form>
         </section>
+
+        <section id="contatos">
+            <h2>Contatos</h2>
+            <p>Telefone: (87) 3838-0000</p>
+            <p>E-mail: contato@hotelafogados.com.br</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Produzido por J.</p>
+    </footer>
+</body>
+</html>
+
 
         <section id="contatos">
             <h2>Contatos</h2>
