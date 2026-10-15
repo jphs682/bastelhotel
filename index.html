@@ -1,97 +1,282 @@
+```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Afogados</title>
+
+    <meta
+        name="description"
+        content="Conheça o Hotel Afogados, confira nossas instalações e solicite sua reserva."
+    >
+
+    <title>Hotel Afogados | Sua estadia com conforto</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Hotel Afogados</h1>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container">
+            <a href="#inicio" class="logo">Hotel Afogados</a>
+
+            <nav aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#fotos">Nosso hotel</a>
+                <a href="#reservas">Reservas</a>
+                <a href="#contatos">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#fotos">Fotos do hotel</a>
-        <a href="#reservas">Faça sua reserva</a>
-        <a href="#contatos">Contatos</a>
-    </nav>
-
     <main>
-        <section>
-            <h2>Conheça nosso Hotel.</h2>
-        </section>
 
-        <section>
-            <p>Alguns registros de nossas instalações.</p>
-        </section>
-        
-        <section id="fotos">
-            <div class="foto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWCPz4G9_d_1mwObmCILlkmGKCaRv9NykV0W1edAlTg&s=10" alt="Quarto com vista para a praia">
-            </div>
-        
-            <div class="foto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefi2aw4G8RL9oiDCTUDS7-JmpOg98-S_8z7hyIJFMrg&s=10" alt="Piscina externa do hotel">
-            </div>
+        <!-- Apresentação principal -->
+        <section id="inicio" class="hero">
+            <div class="hero-conteudo">
+                <p class="destaque">SEJA BEM-VINDO AO HOTEL AFogados</p>
 
-            <div class="foto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHvaPuW37GTxf4cEYzEwnyHGm4C2Q05yjPTeWEL2CpQ&s=10" alt="Piscina com borda infinita e vista para o mar">
+                <h1>Conforto e tranquilidade para sua estadia</h1>
+
+                <p>
+                    Um lugar para descansar, aproveitar sua viagem
+                    e se sentir bem durante sua estadia em Afogados
+                    da Ingazeira.
+                </p>
+
+                <a href="#reservas" class="botao">
+                    Faça sua reserva
+                </a>
             </div>
         </section>
 
-        <section>
-            <h2>Faça a sua reserva</h2>
-            <p>Preencha os dados abaixo para reservar a sua estadia no nosso hotel</p>
+        <!-- Apresentação do hotel -->
+        <section class="sobre container">
+            <h2>Conheça nosso hotel</h2>
+
+            <p>
+                Nosso objetivo é proporcionar uma estadia agradável,
+                com conforto, tranquilidade e um atendimento acolhedor.
+                Conheça nossas instalações e planeje sua próxima visita.
+            </p>
         </section>
 
-                        <section id="reservas">
-            <h3>Dados da Reserva:</h3>
-            
-            <form action="#" method="POST">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        <!-- Galeria de fotos -->
+        <section id="fotos" class="galeria">
+            <div class="container">
+                <h2>Nossas instalações</h2>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                <p class="subtitulo">
+                    Confira alguns registros dos nossos ambientes.
+                </p>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(87) 99999-9999" required>
+                <div class="fotos-grid">
 
-                <!-- Bloco de datas lado a lado -->
-                <div class="linha-dupla">
-                    <div class="campo">
-                        <label for="checkin">Data de Entrada:</label>
-                        <input type="date" id="checkin" name="checkin" required>
-                    </div>
-                    <div class="campo">
-                        <label for="checkout">Data de Saída:</label>
-                        <input type="date" id="checkout" name="checkout" required>
-                    </div>
+                    <article class="foto">
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+                            alt="Quarto de hotel com cama confortável"
+                            loading="lazy"
+                        >
+
+                        <div class="foto-info">
+                            <h3>Nossos quartos</h3>
+                            <p>Um ambiente preparado para seu descanso.</p>
+                        </div>
+                    </article>
+
+                    <article class="foto">
+                        <img
+                            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+                            alt="Área externa de um hotel"
+                            loading="lazy"
+                        >
+
+                        <div class="foto-info">
+                            <h3>Nossas instalações</h3>
+                            <p>Espaços para tornar sua estadia agradável.</p>
+                        </div>
+                    </article>
+
+                    <article class="foto">
+                        <img
+                            src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80"
+                            alt="Ambiente de hotel com decoração elegante"
+                            loading="lazy"
+                        >
+
+                        <div class="foto-info">
+                            <h3>Conforto e tranquilidade</h3>
+                            <p>Um ambiente para relaxar durante sua viagem.</p>
+                        </div>
+                    </article>
+
                 </div>
-
-                <label for="hospedes">Quantidade de Hóspedes:</label>
-                <select id="hospedes" name="hospedes" required>
-                    <option value="1">1 Pessoa</option>
-                    <option value="2">2 Pessoas</option>
-                    <option value="3">3 Pessoas</option>
-                    <option value="4">4 ou mais pessoas</option>
-                </select>
-
-                <button type="submit" class="btn-enviar">Confirmar Reserva</button>
-            </form>
+            </div>
         </section>
 
+        <!-- Formulário de reserva -->
+        <section id="reservas" class="reservas">
+            <div class="container">
+                <h2>Faça sua reserva</h2>
 
-        <section id="contatos">
-            <h2>Contatos</h2>
-            <p>Telefone: (87) 3838-0000</p>
-            <p>E-mail: contato@hotelafogados.com.br</p>
+                <p class="subtitulo">
+                    Preencha os dados abaixo para solicitar sua estadia.
+                </p>
+
+                <form class="form-reserva" action="#" method="post">
+
+                    <h3>Dados do hóspede</h3>
+
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seu@email.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(87) 99999-9999"
+                            autocomplete="tel"
+                            required
+                        >
+                    </div>
+
+                    <h3>Dados da estadia</h3>
+
+                    <div class="campos-grid">
+                        <div class="campo">
+                            <label for="entrada">Data de entrada</label>
+                            <input
+                                type="date"
+                                id="entrada"
+                                name="entrada"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="saida">Data de saída</label>
+                            <input
+                                type="date"
+                                id="saida"
+                                name="saida"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="hospedes">Quantidade de hóspedes</label>
+                        <select
+                            id="hospedes"
+                            name="hospedes"
+                            required
+                        >
+                            <option value="">Selecione</option>
+                            <option value="1">1 hóspede</option>
+                            <option value="2">2 hóspedes</option>
+                            <option value="3">3 hóspedes</option>
+                            <option value="4">4 hóspedes</option>
+                            <option value="5">5 ou mais hóspedes</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">
+                            Observações (opcional)
+                        </label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="4"
+                            placeholder="Informe alguma necessidade especial..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="botao botao-form">
+                        Solicitar reserva
+                    </button>
+
+                    <p class="aviso">
+                        O envio da solicitação depende da configuração
+                        de um sistema de reservas.
+                    </p>
+
+                </form>
+            </div>
         </section>
+
+        <!-- Contatos -->
+        <section id="contatos" class="contatos">
+            <div class="container">
+                <h2>Entre em contato</h2>
+
+                <p class="subtitulo">
+                    Estamos à disposição para tirar suas dúvidas.
+                </p>
+
+                <div class="contatos-grid">
+
+                    <div class="contato-item">
+                        <h3>Telefone</h3>
+                        <p>Adicione aqui o telefone do hotel.</p>
+                    </div>
+
+                    <div class="contato-item">
+                        <h3>E-mail</h3>
+                        <p>Adicione aqui o e-mail do hotel.</p>
+                    </div>
+
+                    <div class="contato-item">
+                        <h3>Localização</h3>
+                        <p>Afogados da Ingazeira - PE</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>Produzido por J.</p>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <p>
+                &copy; 2026 Hotel Afogados.
+                Todos os direitos reservados.
+            </p>
+
+            <p>Desenvolvido por João Paulo Higino.</p>
+
+            <a href="#inicio">Voltar ao topo ↑</a>
+        </div>
     </footer>
+
 </body>
 </html>
+```
