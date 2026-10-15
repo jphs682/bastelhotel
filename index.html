@@ -45,10 +45,9 @@
             <p>Preencha os dados abaixo para reservar a sua estadia no nosso hotel</p>
         </section>
 
-                <section id="reservas">
-            <h3>Dados do hóspede:</h3>
+                        <section id="reservas">
+            <h3>Dados da Reserva:</h3>
             
-            <!-- A tag <form> agora engloba os inputs e o botão de envio -->
             <form action="#" method="POST">
                 <label for="nome">Nome completo:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
@@ -59,10 +58,30 @@
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(87) 99999-9999" required>
 
-                <!-- Novo botão de envio adicionado aqui -->
+                <!-- Bloco de datas lado a lado -->
+                <div class="linha-dupla">
+                    <div class="campo">
+                        <label for="checkin">Data de Entrada:</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="campo">
+                        <label for="checkout">Data de Saída:</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+
+                <label for="hospedes">Quantidade de Hóspedes:</label>
+                <select id="hospedes" name="hospedes" required>
+                    <option value="1">1 Pessoa</option>
+                    <option value="2">2 Pessoas</option>
+                    <option value="3">3 Pessoas</option>
+                    <option value="4">4 ou mais pessoas</option>
+                </select>
+
                 <button type="submit" class="btn-enviar">Confirmar Reserva</button>
             </form>
         </section>
+
 
         <section id="contatos">
             <h2>Contatos</h2>
